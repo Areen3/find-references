@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "declarationMap": true,
+    "composite": true,
+    "outDir": "../../target-src/"
+  },
+  "references": [{ "path": "../my-library/tsconfig.json" }],
+  "files": ["../my-library/index.ts"],
+  "include": ["**/*.ts"]
+}

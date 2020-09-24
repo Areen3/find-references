@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "lib": ["dom", "es2018"],
+    "baseUrl": ".",
+    "paths": {
+      "@nxtest": ["packages/my-library/index.ts"]
+    }
+  },
+  "references": [
+    { "path": "packages/my-app/tsconfig.json" },
+    { "path": "packages/my-library/tsconfig.json" },
+    { "path": "packages/my-library-second/tsconfig.json" }
+  ],
+  "files": []
+}
