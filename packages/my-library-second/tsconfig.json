@@ -1,13 +1,8 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "declaration": true,
-    "sourceMap": true,
-    "composite": true,
-    "declarationMap": true,
-    "outDir": "../../target-shared/"
-  },
-  "references": [{ "path": "../my-library/tsconfig.json" }],
-  "files": ["../my-library/index.ts"],
-  "include": ["**/*.ts"]
+  "extends": "../../tsconfig.base.lib.json",
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
 }

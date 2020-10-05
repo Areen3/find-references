@@ -1,3 +1,10 @@
 {
   "extends": "./tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "packages/my-app" },
+    { "path": "packages/my-library" },
+    { "path": "packages/my-library-second" }
+  ],
 }

@@ -14,14 +14,9 @@
     "noUnusedLocals": true,
     "lib": ["dom", "es2018"],
     "baseUrl": ".",
+    "outDir": "./target-src/",
     "paths": {
       "@nxtest": ["packages/my-library/index.ts"]
     }
-  },
-  "references": [
-    { "path": "packages/my-app/tsconfig.json" },
-    { "path": "packages/my-library/tsconfig.json" },
-    { "path": "packages/my-library-second/tsconfig.json" }
-  ],
-  "files": []
+  }
 }

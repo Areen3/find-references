@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "files": ["../my-library/index.ts"],
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": true,
+    "composite": true,
+    "declarationMap": true,
+  }
+}
